@@ -1,0 +1,42 @@
+$xs-screen-width: 475px;
+$sm-screen-width: 640px;
+$md-screen-width: 768px;
+$lg-screen-width: 1024px;
+$xl-screen-width: 1280px;
+$xxl-screen-width: 1536px;
+
+@mixin xs-breakpoint {
+  @media (min-width: $xs-screen-width) {
+    @content
+  }
+}
+
+@mixin sm-breakpoint {
+  @media (min-width: $sm-screen-width) {
+    @content
+  }
+}
+
+@mixin md-breakpoint {
+  @media (min-width: $md-screen-width) {
+    @content
+  }
+}
+
+@mixin lg-breakpoint {
+  @media (min-width: $lg-screen-width) {
+    @content
+  }
+}
+
+@mixin xl-breakpoint {
+  @media (min-width: $xl-screen-width) {
+    @content
+  }
+}
+
+@mixin xxl-breakpoint {
+  @media (min-width: $xxl-screen-width) {
+    @content
+  }
+}
