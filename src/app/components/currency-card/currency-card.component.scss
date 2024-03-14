@@ -1,0 +1,29 @@
+@use "./../../../assets/styles/color-palette" as colors;
+
+:host {
+  .card-background {
+    background-color: map-get(colors.$primary, 200);
+    padding: 1.5rem;
+    margin: 1.5rem;
+
+    border-radius: 1rem;
+
+    width: 20rem;
+
+    & > .text {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: map-get(colors.$text, "white");
+    }
+
+    .currency-chart {
+      height: 9rem;
+    }
+
+    .currency-value {
+      width: fit-content;
+      margin-left: auto;
+    }
+  }
+}
